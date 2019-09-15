@@ -112,15 +112,14 @@
               our-private-key (-> @cmp-state :key-pair :secretKey mse/hex->array)
               not-fetched (drop-while #(contains? fetched %) not-fetched)]
           (doseq [uid not-fetched]
-            (let [secret (-> secrets :sync :read :secret)
-                  folder (-> secrets :sync :read :folder)
+            (let [folder (-> secrets :sync :read :folder)
                   mail (merge (:server secrets)
                               {:folder folder
                                :uid    uid})
                   fetch-cb (fn [data]
                              (schedule-read cmp-state put-fn)
                              (let [body (get (js->clj data) "body")
-                                   decrypted (time (mse/decrypt body secret their-public-key our-private-key))
+                                   decrypted (time (mse/decrypt body their-public-key our-private-key))
                                    msg-type (first decrypted)
                                    {:keys [msg-payload msg-meta]} (second decrypted)
                                    msg (with-meta [msg-type msg-payload]

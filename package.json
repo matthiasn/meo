@@ -1,6 +1,6 @@
 {
   "name": "meins",
-  "version": "0.6.244",
+  "version": "0.6.245",
   "description": "meins - a personal information manager",
   "main": "prod/main-shadow/main.js",
   "scripts": {
@@ -30,7 +30,6 @@
     "cldr-data": "35.1.0",
     "cookie-parser": "1.4.4",
     "create-react-class": "15.6.3",
-    "crypto-js": "3.1.9-1",
     "draft-js": "0.11.0",
     "draft-js-linkify-plugin": "2.0.2",
     "draft-js-mention-plugin": "3.1.4",

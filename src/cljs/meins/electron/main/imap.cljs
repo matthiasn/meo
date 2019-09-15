@@ -140,7 +140,7 @@
       body)))
 
 (defn read-mailbox [[k mb-cfg] cfg current-state put-fn]
-  (let [{:keys [secret mailbox body-part]} mb-cfg
+  (let [{:keys [mailbox body-part]} mb-cfg
         their-public-key (some-> cfg :mobile :publicKey mse/hex->array)
         our-private-key (some-> current-state :secretKey mse/hex->array)
         path [:sync :read k :last-read]
@@ -149,7 +149,7 @@
                                  (let [hex-body (extract-body (apply str @buffer))]
                                    (info "end-cb buffer" seqn "- size" (count hex-body))
                                    (debug hex-body)
-                                   (when-let [decrypted (mse/decrypt hex-body secret their-public-key our-private-key)]
+                                   (when-let [decrypted (mse/decrypt hex-body their-public-key our-private-key)]
                                      (let [msg-type (first decrypted)
                                            {:keys [msg-payload msg-meta]} (second decrypted)
                                            msg-meta (merge msg-meta {:window-id :broadcast})

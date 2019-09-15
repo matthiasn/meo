@@ -129,8 +129,8 @@ android {
         applicationId "com.matthiasn.meins"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 82
-        versionName "1.0.73"
+        versionCode 83
+        versionName "1.0.75"
         missingDimensionStrategy 'react-native-camera', 'general'
         multiDexEnabled true
         buildConfigField "String", "MGLMapboxAccessToken", MAPBOX_ACCESS_TOKEN
