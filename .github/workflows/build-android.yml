@@ -22,7 +22,9 @@ jobs:
           GRADLE_PROPERTIES: ${{ secrets.GRADLE_PROPERTIES }}
       - name: Set up android keystore
         working-directory: MeinsApp/android/app
-        run: echo "$ANDROID_KEYSTORE" | base64 -D > release.keystore
+        run: |
+          mkdir ~/.play
+          echo "$ANDROID_KEYSTORE" | base64 -D > release.keystore
         env:
           ANDROID_KEYSTORE: ${{ secrets.ANDROID_KEYSTORE }}
       - name: Set up playstore
