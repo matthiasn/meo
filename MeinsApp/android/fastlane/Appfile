@@ -1,3 +1,3 @@
-package_name("com.matthiasn.meins")
+package_name("com.matthiasn.meins.android")
 
 json_key_file "~/.play/api-8047501467075210695-634125-d6886135229e.json"

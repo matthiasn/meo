@@ -126,11 +126,11 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.matthiasn.meins"
+        applicationId "com.matthiasn.meins.android"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 175
-        versionName "1.0.157"
+        versionCode 177
+        versionName "1.0.158"
         missingDimensionStrategy "react-native-camera", "general"
         multiDexEnabled true
         buildConfigField "String", "MGLMapboxAccessToken", MAPBOX_ACCESS_TOKEN

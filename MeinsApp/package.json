@@ -1,6 +1,6 @@
 {
   "name": "meins",
-  "version": "1.0.157",
+  "version": "1.0.158",
   "private": true,
   "scripts": {
     "start": "node --max-old-space-size=8192 node_modules/react-native/local-cli/cli.js start",

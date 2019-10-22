@@ -107,7 +107,7 @@ android: npm-deps cljs fastlane-beta-android
 
 playstore-upload:
 	@echo Uploading to Playstore
-	cd android && fastlane deploy && cd ..
+	cd android && fastlane supply --apk app/build/outputs/apk/release/app-release.apk && cd ..
 
 playstore: npm-deps cljs fastlane-beta-android playstore-upload
 
