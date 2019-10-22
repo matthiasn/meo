@@ -105,5 +105,11 @@ metro:
 
 android: npm-deps cljs fastlane-beta-android
 
+playstore-upload:
+	@echo Uploading to Playstore
+	cd android && fastlane deploy && cd ..
+
+playstore: npm-deps cljs fastlane-beta-android playstore-upload
+
 android-install:
 	adb install android/app/build/outputs/apk/release/app-release.apk

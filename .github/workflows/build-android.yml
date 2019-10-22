@@ -5,7 +5,7 @@ jobs:
   build:
     name: Build APK
     runs-on: macOS-latest
-    if: github.ref == 'refs/heads/master'
+    if: github.ref == 'refs/heads/master' || 'refs/heads/playstore'
     steps:
       - uses: actions/checkout@v1
         with:
@@ -25,6 +25,10 @@ jobs:
         run: echo "$ANDROID_KEYSTORE" | base64 -D > release.keystore
         env:
           ANDROID_KEYSTORE: ${{ secrets.ANDROID_KEYSTORE }}
+      - name: Set up playstore
+        run: echo "$JSON_KEY_FILE" | base64 -D > ~/.play/api-8047501467075210695-634125-d6886135229e.json
+        env:
+          JSON_KEY_FILE: ${{ secrets.JSON_KEY_FILE }}
       - name: Debug app folder
         working-directory: MeinsApp/android/app
         run: ls
@@ -61,3 +65,9 @@ jobs:
         with:
           name: release-apk
           path: MeinsApp/android/app/build/outputs/apk/release/app-release.apk
+      - name: Playstore init
+        working-directory: MeinsApp/android
+        run: fastlane supply init
+      - name: Playstore upload
+        working-directory: MeinsApp
+        run: make playstore-upload

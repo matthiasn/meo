@@ -68,3 +68,5 @@ MeinsApp/ios/assets/
 *.mobileprovision
 *.p12
 *.certSigningRequest
+
+android/fastlane/metadata/
