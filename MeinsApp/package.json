@@ -68,7 +68,7 @@
     "babel-jest": "24.9.0",
     "babel-plugin-transform-es2015-block-scoping": "6.26.0",
     "eslint": "6.7.2",
-    "jest": "24.9.0",
+    "jest": "26.6.3",
     "jetifier": "1.6.5",
     "metro-react-native-babel-preset": "0.57.0",
     "react-test-renderer": "16.13.0"
