@@ -22,7 +22,7 @@
     "create-react-class": "15.6.3",
     "events": "3.0.0",
     "intl": "1.2.5",
-    "moment": "2.24.0",
+    "moment": "2.29.1",
     "path": "0.12.7",
     "prop-types": "15.7.2",
     "querystring": "0.2.0",
