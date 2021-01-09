@@ -78,7 +78,7 @@
     "tinycolor": "0.0.1",
     "turndown": "5.0.3",
     "tweetnacl": "1.0.2",
-    "tweetnacl-util": "0.15.0",
+    "tweetnacl-util": "0.15.1",
     "typeface-montserrat": "0.0.75",
     "utf-8-validate": "5.0.2",
     "wavesurfer.js": "3.3.1"
