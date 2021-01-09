@@ -23,7 +23,7 @@
     "@geonet/geohash": "1.0.13",
     "@matthiasn/draftjs-md-converter": "1.2.0-4",
     "@zxing/library": "0.15.2",
-    "asar": "2.0.3",
+    "asar": "3.0.3",
     "base-64": "0.1.0",
     "bufferutil": "4.0.1",
     "buildmail": "4.0.1",
