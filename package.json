@@ -47,7 +47,7 @@
     "install": "0.13.0",
     "keytar": "5.0.0",
     "lato-font": "3.0.0",
-    "leaflet": "1.6.0",
+    "leaflet": "1.7.1",
     "lodash": "4.17.15",
     "lodash.throttle": "4.1.1",
     "mapbox-gl": "1.6.1",
