@@ -29,7 +29,7 @@
     "react": "16.9.0",
     "react-dom": "16.9.0",
     "react-native": "0.61.5",
-    "react-native-background-fetch": "2.7.1",
+    "react-native-background-fetch": "4.0.1",
     "react-native-background-geolocation": "3.4.2",
     "react-native-build-config": "0.3.1",
     "react-native-camera": "3.15.1",
