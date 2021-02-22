@@ -36,7 +36,7 @@
     "draft-js-plugins-editor": "3.0.0",
     "electron-context-menu": "0.15.2",
     "electron-fetch": "1.4.0",
-    "electron-log": "4.0.3",
+    "electron-log": "4.3.2",
     "electron-updater": "4.2.0",
     "emoji-flags": "1.2.0",
     "find-process": "1.4.3",
