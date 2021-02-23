@@ -27,7 +27,7 @@
     "prop-types": "15.7.2",
     "querystring": "0.2.0",
     "react": "16.9.0",
-    "react-dom": "16.9.0",
+    "react-dom": "17.0.1",
     "react-native": "0.61.5",
     "react-native-background-fetch": "2.7.1",
     "react-native-background-geolocation": "3.4.2",
