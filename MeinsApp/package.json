@@ -41,7 +41,7 @@
     "react-native-keychain": "4.0.5",
     "react-native-modal": "11.5.3",
     "react-native-permissions": "2.0.9",
-    "react-native-qrcode-svg": "6.0.3",
+    "react-native-qrcode-svg": "6.1.1",
     "react-native-reanimated": "1.7.0",
     "react-native-screens": "^2.4.0",
     "react-native-super-grid": "3.1.2",
