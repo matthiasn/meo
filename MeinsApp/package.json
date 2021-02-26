@@ -32,7 +32,7 @@
     "react-native-background-fetch": "2.7.1",
     "react-native-background-geolocation": "3.4.2",
     "react-native-build-config": "0.3.1",
-    "react-native-camera": "3.15.1",
+    "react-native-camera": "3.43.0",
     "react-native-contacts": "5.0.7",
     "react-native-elements": "1.2.7",
     "react-native-exception-handler": "2.10.8",
