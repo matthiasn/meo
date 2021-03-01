@@ -67,7 +67,7 @@
     "@react-native-community/eslint-config": "0.0.5",
     "babel-jest": "24.9.0",
     "babel-plugin-transform-es2015-block-scoping": "6.26.0",
-    "eslint": "6.7.2",
+    "eslint": "7.21.0",
     "jest": "24.9.0",
     "jetifier": "1.6.5",
     "metro-react-native-babel-preset": "0.57.0",
