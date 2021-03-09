@@ -62,7 +62,7 @@
     "tweetnacl-util": "0.15.0"
   },
   "devDependencies": {
-    "@babel/core": "7.7.5",
+    "@babel/core": "7.13.10",
     "@babel/runtime": "7.7.6",
     "@react-native-community/eslint-config": "0.0.5",
     "babel-jest": "24.9.0",
