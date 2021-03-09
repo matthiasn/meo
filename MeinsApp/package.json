@@ -63,7 +63,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.7.5",
-    "@babel/runtime": "7.7.6",
+    "@babel/runtime": "7.13.10",
     "@react-native-community/eslint-config": "0.0.5",
     "babel-jest": "24.9.0",
     "babel-plugin-transform-es2015-block-scoping": "6.26.0",
